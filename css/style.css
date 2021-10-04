@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #18191a;
+}
+
+.post {
+  width: 500px;
+  font-family: inherit;
+  color: #e4e6eb;
+  font-size: 0.9375rem;
+  background-color: #242526;
+  border-radius: 1.5%;
+}
+
+.post-header {
+  padding: 12px 0px 16px 16px;
+  margin-bottom: 12px;
+}
+.ava {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+strong {
+  width: 320.7;
+  height: 43;
+  text-align: inherit;
+}
+
+.see-first {
+  display: inline;
+  position: relative;
+  text-align: left;
+}
+
+.day {
+  text-align: left;
+}
+
+.post-content {
+  padding: 4px 16px 16px 16px;
+}
+.pic {
+  width: 500px;
+  height: 500px;
+}
+.post-num {
+  padding: 10px 0px;
+  margin: 0px 16px;
+}
