@@ -1,27 +1,50 @@
+* {
+  box-sizing: : border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  font-family: inherit;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #18191a;
 }
 
+span {
+  color: #b0b3b8;
+}
+
 .post {
   width: 500px;
-  font-family: inherit;
   color: #e4e6eb;
   font-size: 0.9375rem;
   background-color: #242526;
   border-radius: 1.5%;
 }
 
+/* POST HEADER */
 .post-header {
+  display: flex;
+  align-items: flex-start;
   padding: 12px 0px 16px 16px;
-  margin-bottom: 12px;
 }
+
 .ava {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.post-author {
+  padding: 0 15px;
+  font-size: 0.9rem;
+}
+
+.post-author p {
+  margin-bottom: 5px;
 }
 
 strong {
@@ -30,24 +53,89 @@ strong {
   text-align: inherit;
 }
 
-.see-first {
-  display: inline;
-  position: relative;
-  text-align: left;
+.post-header img, p, span {
+  cursor: pointer;
 }
 
-.day {
-  text-align: left;
-}
-
+/* POST BODY */
 .post-content {
   padding: 4px 16px 16px 16px;
+  margin-bottom: 12px;
+  line-height: 1.3rem;
 }
+
+.post-content b {
+  cursor: pointer;
+}
+
+.post-content b:hover{
+  text-decoration: underline;
+}
+
+/* POST PICTURE */
 .pic {
   width: 500px;
   height: 500px;
+  cursor: pointer;
 }
+
+/* POST FOOTER */
+
+/* Post num */
 .post-num {
   padding: 10px 0px;
   margin: 0px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.post-num span {
+  display: flex;
+  align-items: center;
+}
+
+.post-num p {
+  margin-left: 5px;
+}
+
+.post-num div {
+  margin-left: auto;
+}
+
+.post-num a {
+  color: #b0b3b8;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.post-num a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  width: 95%;
+  margin: auto;
+}
+
+/* Post button */
+.post-button {
+  padding: 0 16px;
+  display: flex;
+}
+
+.post-button i {
+  margin: 0 5px;
+}
+
+.post-button span {
+  flex: 1 0 auto;
+  text-align: center;
+  padding: 9px 0;
+  margin: 5px 0;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.post-button span:hover{
+  background-color: #4e4e4e;
 }
